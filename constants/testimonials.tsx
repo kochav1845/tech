@@ -1,44 +1,45 @@
 export const testimonials = [
   {
-    name: "Manu Arora",
-    designation: "Senior Meme Officer",
+    name: "Sarah Martinez",
+    designation: "CEO at TechFlow Solutions",
     content:
-      "This is my application so i'll only say good things about it. It's the piece of crap. Although it took me so much time and energy to build. I'm proud of it.",
+      "This CRM/ERP platform transformed our operations completely. We've seen a 40% increase in productivity and our sales pipeline is crystal clear. Best investment we've made.",
     avatar: "/images/testimonials/manu.png",
   },
 
   {
-    name: "Alfred J. Pennyworth",
-    designation: "MD at Wayne Enterprises",
+    name: "James Anderson",
+    designation: "Operations Director at GlobalCorp",
     content:
-      "Backed by Wayne enterprises, Foxtrot is the best platform any business can ever imagine. Worth every penny.",
+      "Managing our entire supply chain, inventory, and customer relationships in one platform has been a game-changer. The ROI was visible within the first quarter.",
     avatar: "/images/testimonials/2.png",
   },
   {
-    name: "Elon Must",
-    designation: "Twiteeer CEO, Developer, Writer, Memer, etc.",
+    name: "Emily Chen",
+    designation: "VP of Sales at InnovateTech",
     content:
-      "What did you get done this week? stop with this application and start fixing the search damnit.",
+      "Finally, a CRM that our entire sales team actually wants to use. The interface is intuitive and the automation features save us hours every week.",
     avatar: "/images/testimonials/3.png",
   },
   {
-    name: "Lord Voldemort",
-    designation: "Head boy at Slytherin House",
+    name: "Michael Roberts",
+    designation: "CFO at Enterprise Dynamics",
     content:
-      "Harry Potter, the boy who bought Foxtrot Analytics. He is stronger than me now. Highly recommended.",
+      "The financial reporting and resource planning capabilities are outstanding. We have real-time visibility into every aspect of our business operations.",
     avatar: "/images/testimonials/4.png",
   },
   {
-    name: "Tyler Durden",
-    designation: "Project Mayhem Coordinator",
+    name: "Lisa Thompson",
+    designation: "Managing Director at GrowthPartners",
     content:
-      "Tried to incorporate in project mayhem but it didn't work. I don't know why. I'm not a developer. I'm a salesman. I sell soap. Also this platform is hella expensive.",
+      "Integrating our CRM and ERP into one unified system eliminated data silos and streamlined our workflows. Our team collaboration has never been better.",
     avatar: "/images/testimonials/1.png",
   },
   {
-    name: "Groot",
-    designation: "Groot at Groot Industries",
-    content: "I am groot. I am groot, I am groot, I am groot. I AM GROOOOOT!",
+    name: "David Park",
+    designation: "CTO at Quantum Industries",
+    content:
+      "The scalability and security features give us peace of mind as we grow. The API integrations are seamless and the support team is incredibly responsive.",
     avatar: "/images/testimonials/5.png",
   },
 ];

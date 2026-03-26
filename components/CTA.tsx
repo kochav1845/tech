@@ -19,16 +19,16 @@ export const CTA = ({ headerText, bodyText }: any) => {
       <div className=" lg:grid lg:grid-cols-1 gap-10 p-2 md:p-8 relative z-20">
         <div className="text-center lg:text-left">
           <h2 className="text-2xl md:text-4xl font-bold my-4  text-center">
-            {headerText || `So what are you waiting for?`}
+            {headerText || `Ready to transform your business?`}
           </h2>
           <p className="my-4 text-base text-gray-300 md:text-lg tracking-wide font-light  text-center max-w-lg mx-auto">
             {bodyText ||
-              `We are here to help you with your business. Get in touch with us and we will get back to you as soon as possible.`}
+              `Join thousands of businesses already using our CRM and ERP platform. Start your free trial today and see the difference.`}
           </p>
 
           <div className="flex justify-center">
             <Button as="button" variant="large" className="rounded-2xl py-2">
-              <Link href="/signup">Contact Us</Link>
+              <Link href="/signup">Get Started Now</Link>
             </Button>
           </div>
         </div>

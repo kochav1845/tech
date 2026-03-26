@@ -22,50 +22,50 @@ export const Pricing = () => {
   const packages = {
     starter: {
       title: "Starter",
-      description: "For small teams or office",
-      monthly: 9,
-      yearly: 69,
+      description: "Perfect for small businesses",
+      monthly: 49,
+      yearly: 499,
       features: [
-        "1 users",
-        "10 projects",
-        "10,000 website views",
-        "2 Integration",
-        "1GB storage",
+        "Up to 5 users",
+        "Core CRM features",
+        "Basic reporting",
+        "1,000 customer contacts",
+        "5GB storage",
         "Email support",
-        "Everything else",
+        "Mobile app access",
       ],
     },
     pro: {
-      title: "Pro Champion",
-      description: "For medium to large teams",
-      monthly: 29,
-      yearly: 169,
+      title: "Professional",
+      description: "For growing businesses",
+      monthly: 149,
+      yearly: 1490,
       features: [
-        "5 users",
-        "50 projects",
-        "50,000 website views",
-        "5 Integration",
-        "5GB storage",
-        "Talk to Manu for 5 minutes",
-        "Read a book together",
-        "Understand the meaning of life",
-        "Email support",
-        "Everything else",
+        "Up to 25 users",
+        "Full CRM & ERP suite",
+        "Advanced analytics",
+        "Unlimited contacts",
+        "50GB storage",
+        "API access",
+        "Workflow automation",
+        "Priority support",
+        "Custom integrations",
       ],
     },
     king: {
-      monthly: 59,
-      yearly: 469,
-      title: "King Maker",
-      description: "For large teams or office",
+      monthly: 399,
+      yearly: 3990,
+      title: "Enterprise",
+      description: "For large organizations",
       features: [
-        "unlimited users",
-        "unlimited projects",
-        "unlimited website views",
-        "unlimited Integration",
-        "unlimited storage",
-        "Email support",
-        "Everything else",
+        "Unlimited users",
+        "Complete CRM & ERP platform",
+        "Advanced AI insights",
+        "Unlimited everything",
+        "Dedicated account manager",
+        "Custom development",
+        "24/7 phone support",
+        "SLA guarantees",
       ],
     },
   };
@@ -76,11 +76,10 @@ export const Pricing = () => {
     >
       <div className="max-w-xl md:mx-auto md:text-center xl:max-w-none relative z-10">
         <h2 className="font-display text-3xl tracking-tight text-zinc-900 sm:text-4xl md:text-5xl">
-          Our pricing will surprise you
+          Transparent pricing that scales with you
         </h2>
         <p className="mt-6 text-lg tracking-tight  text-zinc-600">
-          With so many features at your disposal, you might have to take a loan
-          to buy our monthly subscription.
+          Choose the plan that fits your business needs. All plans include a 14-day free trial with no credit card required.
         </p>
       </div>
       <div className="mx-auto flex-row space-x-2 justify-center items-center border rounded-3xl border-gray-100 flex mt-20 overflow-hidden w-fit">

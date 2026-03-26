@@ -49,13 +49,11 @@ export const Hero = () => {
       </div>
       <div className="relative z-10 max-w-7xl mx-auto mt-32">
         <h1 className="font-semibold text-4xl sm:text-7xl text-center max-w-5xl mx-auto text-zinc-800 leading-tight tracking-tight">
-          Revolutionize your business with our{" "}
-          <span className="text-primary">powerful SaaS</span> tool
+          Transform your business with our{" "}
+          <span className="text-primary">unified CRM & ERP</span> solution
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-xl tracking-tight text-zinc-600 text-center leading-normal">
-          Foxtrot is a simple and powerful SaaS tool that helps you to track
-          your business analytics and improve your numbers. Just kidding, it's
-          just a template.
+          Streamline operations, manage customer relationships, and optimize resources all in one powerful platform. Built for modern businesses that demand efficiency.
         </p>
 
         <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center items-center mt-12">
@@ -64,10 +62,10 @@ export const Hero = () => {
             variant="outline"
             className="rounded-2xl py-2 border border-zinc-200"
           >
-            <Link href="/signup">Documentation</Link>
+            <Link href="/signup">View Demo</Link>
           </Button>
           <Button as="button" variant="large" className="rounded-2xl py-2">
-            <Link href="/signup">Try it for free</Link>
+            <Link href="/signup">Start Free Trial</Link>
           </Button>
         </div>
 

@@ -41,11 +41,10 @@ export const SubHero = () => {
       <div className="absolute w-96 h-96 -left-20 -top-20 bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl rounded-full opacity-20" />
       <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
         <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-          Your analytics need at one place
+          Everything your business needs in one place
         </h2>
         <p className="mt-6 text-lg tracking-tight text-blue-100">
-          Imagine Google Analytics with 100 more features. That's Foxtrot. Even
-          we don't like it.
+          From customer relationships to resource planning, our integrated platform helps you manage every aspect of your business efficiently.
         </p>
       </div>
 
