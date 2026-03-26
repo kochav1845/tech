@@ -7,6 +7,9 @@ module.exports = {
   content: ["./**/*.{ts,tsx}", "./_app.tsx"],
   theme: {
     extend: {
+      fontFamily: {
+        display: ["var(--font-abril)", "serif"],
+      },
       animation: {
         "text-shimmer": "text-shimmer 2.5s ease-out infinite alternate",
       },

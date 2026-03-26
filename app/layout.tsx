@@ -3,6 +3,13 @@ import { Metadata } from "next";
 import { Banner } from "@components/Banner";
 import Navbar from "@components/Navbar/Navbar";
 import { Footer } from "@components/Footer";
+import { Abril_Fatface } from "next/font/google";
+
+const abrilFatface = Abril_Fatface({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-abril",
+});
 
 export const metadata: Metadata = {
   title: "Foxtrot | SaaS Marketing Template",
@@ -30,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={abrilFatface.variable}>
         <Navbar />
         {children}
         <Footer />
