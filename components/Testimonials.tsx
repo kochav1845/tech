@@ -13,16 +13,14 @@ export const Testimonials = () => {
   return (
     <div
       id="testimonials"
-      className=" px-4 bg-white py-20 md:py-40 relative group overflow-hidden"
+      className="px-4 bg-gray-50 py-20 md:py-40 relative group overflow-hidden"
     >
-      <div className="absolute  h-96 -top-64 inset-x-0 w-1/2 mx-auto bg-gradient-to-t from-[#9890e3] to-[#b1f4cf] blur-3xl  rounded-full opacity-50" />
       <div className="max-w-xl md:mx-auto md:text-center xl:max-w-none relative z-10">
-        <h2 className="font-display text-3xl tracking-tight text-zinc-900 sm:text-4xl md:text-5xl">
+        <h2 className="font-display text-3xl tracking-tight text-black sm:text-4xl md:text-5xl">
           See what our users say about us
         </h2>
-        <p className="mt-6 text-lg tracking-tight  text-zinc-600">
-          Our very own wall of love. Or complaints. Whatever you want to call
-          it.
+        <p className="mt-6 text-lg tracking-tight text-gray-800">
+          Trusted by thousands of businesses worldwide who have transformed their operations with our CRM and ERP platform.
         </p>
       </div>
 
@@ -44,8 +42,8 @@ const TestimonialCard = ({
   avatar,
 }: Testimonial) => {
   return (
-    <div className="shadow-lg px-8 py-12 rounded-xl border flex-1 mb-8">
-      <p className="text-xl md:text-2xl font-normal text-zinc-700 leading-relaxed">
+    <div className="bg-white shadow-lg px-8 py-12 rounded-xl border border-gray-200 flex-1 mb-8">
+      <p className="text-xl md:text-2xl font-normal text-black leading-relaxed">
         {content}
       </p>
 
@@ -54,12 +52,12 @@ const TestimonialCard = ({
           src={avatar}
           height="40"
           width="40"
-          className="rounded-full border border-gray-100"
+          className="rounded-full border border-gray-200"
         />
 
         <div className="flex flex-col">
-          <p className="text-sm text-gray-800">{name}</p>
-          <p className="text-xs text-gray-500">{designation}</p>
+          <p className="text-sm text-black font-medium">{name}</p>
+          <p className="text-xs text-gray-600">{designation}</p>
         </div>
       </div>
     </div>
