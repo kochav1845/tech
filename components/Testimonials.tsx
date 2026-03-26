@@ -2,6 +2,7 @@
 import { testimonials } from "constants/testimonials";
 import React from "react";
 import { BlurImage } from "./BlurImage";
+import { WobbleCard } from "./ui/wobble-card";
 
 type Testimonial = {
   name: string;
@@ -9,6 +10,16 @@ type Testimonial = {
   designation?: string;
   avatar?: string;
 };
+
+const cardColors = [
+  "bg-blue-900",
+  "bg-emerald-800",
+  "bg-slate-800",
+  "bg-teal-900",
+  "bg-cyan-900",
+  "bg-sky-900",
+];
+
 export const Testimonials = () => {
   return (
     <div
@@ -24,11 +35,13 @@ export const Testimonials = () => {
         </p>
       </div>
 
-      <div className="max-w-6xl mx-auto columns-1 md:columns-2 lg:columns-3 gap-4 mt-20">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
         {testimonials.map((testimonial: Testimonial, idx: number) => (
-          <>
-            <TestimonialCard key={`testimonial-${idx}`} {...testimonial} />
-          </>
+          <TestimonialCard
+            key={`testimonial-${idx}`}
+            {...testimonial}
+            colorClass={cardColors[idx % cardColors.length]}
+          />
         ))}
       </div>
     </div>
@@ -40,26 +53,29 @@ const TestimonialCard = ({
   content,
   designation,
   avatar,
-}: Testimonial) => {
+  colorClass,
+}: Testimonial & { colorClass: string }) => {
   return (
-    <div className="bg-white shadow-lg px-8 py-12 rounded-xl border border-gray-200 flex-1 mb-8">
-      <p className="text-xl md:text-2xl font-normal text-black leading-relaxed">
-        {content}
-      </p>
+    <WobbleCard containerClassName={`min-h-[320px] ${colorClass}`}>
+      <div className="flex flex-col h-full justify-between">
+        <p className="text-base md:text-lg font-normal text-white/90 leading-relaxed">
+          "{content}"
+        </p>
 
-      <div className="flex flex-row space-x-2 mt-8">
-        <BlurImage
-          src={avatar}
-          height="40"
-          width="40"
-          className="rounded-full border border-gray-200"
-        />
+        <div className="flex flex-row space-x-3 mt-6">
+          <BlurImage
+            src={avatar}
+            height="48"
+            width="48"
+            className="rounded-full border-2 border-white/20"
+          />
 
-        <div className="flex flex-col">
-          <p className="text-sm text-black font-medium">{name}</p>
-          <p className="text-xs text-gray-600">{designation}</p>
+          <div className="flex flex-col justify-center">
+            <p className="text-sm text-white font-semibold">{name}</p>
+            <p className="text-xs text-white/70">{designation}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </WobbleCard>
   );
 };
